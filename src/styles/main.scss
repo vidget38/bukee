@@ -15,9 +15,11 @@
 
 $light-color: #fff;
 $accent-color: #65e496;
+$font-body: 'Roboto Slab', serif;
+$font-text: 'Open Sans', serif;
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: $font-body;
 }
 
 .wrap {
@@ -30,6 +32,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
+    padding-bottom: 50px;
 }
 
 .header {
@@ -39,6 +42,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding-top: 38px;
+    padding-bottom: 166px;
     &__logo {
         display: block;
         width: 137px;
@@ -49,11 +53,81 @@ body {
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
+        font-family: $font-text;
         &__item {
-            margin-left: 15px;
+            margin-left: 22px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
         }
         &__item.active {
             border-bottom: 3px solid $accent-color;
         }
+        &__link {
+            color: $light-color;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+.block-text {
+    flex-basis: calc(100% - 500px);
+    &__name {
+        font-family: $font-text;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        margin-bottom: 30px;
+
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+        span {
+            display: block;
+            color: $accent-color;
+            font-size: 18px;
+            margin-top: 9px;
+            letter-spacing: 0.9px;
+        }
+    }
+    &__description {
+        font-family: $font-text;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.7px;
+        margin-bottom: 24px;
+    }
+    &__btn {
+        display: block;
+        background-color: $accent-color;
+        color: $light-color;
+        text-decoration: none;
+        max-width: 250px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 48px;
+        margin-bottom: 19px;
+        padding: 14px 0;
+        letter-spacing: 0.7px;
+    }
+}
+
+.block-book {
+    display: flex;
+    justify-content: flex-start;
+    &-demo {
+        display: block;
+        width: 447px;
+        height: 643px;
+        background-image: url(../img/book.svg);
+        background-repeat: no-repeat;
+        flex-basis: 500px;
     }
 }

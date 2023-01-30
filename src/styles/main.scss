@@ -113,7 +113,9 @@ h3 {
         font-family: $font-text;
         font-size: 18px;
         letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        margin-bottom: 43px;
+        margin-left: 4px;
+        margin-top: 1px;
     }
     &__name_top {
         margin-top: 16px;
@@ -160,11 +162,39 @@ h3 {
     justify-content: flex-start;
     &-demo {
         display: block;
+        position: relative;
         width: 447px;
         height: 643px;
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         flex-basis: 500px;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 131px;
+            top: 118px;
+            letter-spacing: 1.4px;
+            span {
+                font-family: $font-body;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                text-transform: initial;
+                color: $accent-color;
+                display: block;
+                margin-top: 23px;
+                margin-left: 3px;
+            }
+        }
+        &__author {
+            font-family: $font-body;
+            font-size: 14px;
+            letter-spacing: 0.6px;
+            color: $accent-color;
+            position: absolute;
+            bottom: 52px;
+            left: 87px;
+        }
     }
 }
 

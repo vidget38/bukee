@@ -62,6 +62,18 @@ h3 {
         color: $accent-color;
         text-align: center;
     }
+    &__btn {
+        background-color: $accent-color;
+        border: none;
+        color: $light-color;
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 28px;
+        padding: 14px 45px;
+        letter-spacing: 0.7px;
+    }
 }
 
 .header {
@@ -218,17 +230,26 @@ h3 {
     }
     &-text {
         flex-basis:41%;
+        &__desc {
+            font-family: $font-text;
+            letter-spacing: 0.6px;
+        }
     }
+    &-social {
+        display: flex;
+        justify-content: space-around;
+    }
+    
     &-table {
         flex-basis: 49%;
         &__list {
-            margin-top: 25px;
-            padding:0;
+            margin: 25px 0 0 0;
+            padding: 0;
             counter-reset: list;
             column-count: 2;
             &>li {
                 position: relative;
-                padding-left: 37px;
+                padding-left: 36px;
                 counter-increment: list;
                 list-style-type: none;
                 margin-bottom: 8px;

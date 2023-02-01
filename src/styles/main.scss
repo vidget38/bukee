@@ -62,6 +62,18 @@ h3 {
         color: $accent-color;
         text-align: center;
     }
+    &__btn {
+        background: linear-gradient(to top left #65e49c, #65e4af);
+        border: none;
+        color: $light-color;
+        text-decoration: none;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 28px;
+        padding: 14px 45px;
+        letter-spacing: 0.7px;
+    }
 }
 
 .header {

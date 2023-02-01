@@ -63,7 +63,11 @@ h3 {
         text-align: center;
     }
     &__btn {
+<<<<<<< HEAD
         background-color: $accent-color;
+=======
+        background: linear-gradient(to top left #65e49c, #65e4af);
+>>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
         border: none;
         color: $light-color;
         text-decoration: none;
@@ -124,12 +128,15 @@ h3 {
     &__name {
         font-family: $font-text;
         font-size: 18px;
-        letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        letter-spacing: 0.85px;
+        margin-bottom: 43px;
+        margin-left: 4px;
+        margin-top: 1px;
     }
     &__name_top {
         margin-top: 16px;
         margin-left: 0;
+        margin-bottom: 19px;
     }
     &__title {
         font-size: 48px;
@@ -172,11 +179,39 @@ h3 {
     justify-content: flex-start;
     &-demo {
         display: block;
+        position: relative;
         width: 447px;
         height: 643px;
         background-image: url(../img/book.svg);
         background-repeat: no-repeat;
         flex-basis: 500px;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 131px;
+            top: 118px;
+            letter-spacing: 1.4px;
+            span {
+                font-family: $font-body;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                text-transform: initial;
+                color: $accent-color;
+                display: block;
+                margin-top: 23px;
+                margin-left: 3px;
+            }
+        }
+        &__author {
+            font-family: $font-body;
+            font-size: 14px;
+            letter-spacing: 0.6px;
+            color: $accent-color;
+            position: absolute;
+            bottom: 52px;
+            left: 87px;
+        }
     }
 }
 
@@ -224,15 +259,15 @@ h3 {
     h3 {
         margin-bottom: 20px;
     }
-    p {
-        font-family: $font-text;
-        letter-spacing: 0.6px;
-    }
     &-text {
         flex-basis:41%;
         &__desc {
             font-family: $font-text;
+<<<<<<< HEAD
             letter-spacing: 0.6px;
+=======
+        letter-spacing: 0.6px;
+>>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
         }
     }
     &-social {
@@ -244,7 +279,11 @@ h3 {
         flex-basis: 49%;
         &__list {
             margin: 25px 0 0 0;
+<<<<<<< HEAD
             padding: 0;
+=======
+            padding:0;
+>>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
             counter-reset: list;
             column-count: 2;
             &>li {
@@ -265,21 +304,105 @@ h3 {
                     position: absolute;
                     top: 1px;
                     left: 0;
-                    background-color: $accent-color;
+                    background-color: #5fc9b3;
                     color: $light-color;
                     padding: 0px 7px;
                 }
             }
         }
     }
+    &-social {
+        display: flex;
+        align-items: center;
+        margin-top: 14px;
+        &__title {
+            font-family: $font-body;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+        }
+        &__list {
+            list-style-type: none;
+            padding-left: 23px;
+            &>li {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                margin-right: 12px;
+                &>a {
+                    color:$accent-color
+                }
+            }
+        }
+    }
     &__btn {
-        font-size: 18px;
-        letter-spacing: 0.7px;
         background-color: $accent-color;
+        border: none;
         color: $light-color;
-        border: 1px solid $accent-color;
+        text-decoration: none;
         border-radius: 3px;
         text-align: center;
-        padding: 12px 37px;
+        font-size: 18px;
+        margin-top: 28px;
+        padding: 14px 45px;
+        letter-spacing: 0.7px;
+        margin-bottom: 19px;
+    }
+}
+
+
+.block-product {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+    &-item {
+        text-align: center;
+    }
+    &-demo {
+        display: block;
+        margin: 0 auto 35px;
+        position: relative;
+        width: 269px;
+        height: 409px;
+        background-image: url(../img/book_clear.png);
+        &__author {
+            font-family: $font-body;
+            font-size: 12px;
+            color: $accent-color;
+            letter-spacing: 0.6;
+            position: absolute;
+            bottom: 27px;
+            left: 82px;
+        }
+    }
+    &-text {
+        h3 {
+            margin-bottom: 17px;
+        }
+        p {
+            font-size: 15px;
+            max-width: 316px;
+            letter-spacing: 0.7px;
+            margin-bottom: 17px;
+        }
+        a {
+            font-size: 15px;
+            color: $accent-color;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
+        }
+    }
+    & + page_btn {
+        display: block;
+        margin: 84px auto 0;
+        padding: 13px 0;
+        max-width: 227px;
     }
 }

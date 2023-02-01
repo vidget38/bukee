@@ -63,11 +63,7 @@ h3 {
         text-align: center;
     }
     &__btn {
-<<<<<<< HEAD
-        background-color: $accent-color;
-=======
-        background: linear-gradient(to top left #65e49c, #65e4af);
->>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
+        background: linear-gradient(to top left, #65e49c, #65e4af);
         border: none;
         color: $light-color;
         text-decoration: none;

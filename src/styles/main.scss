@@ -73,6 +73,18 @@ h3 {
         margin-top: 28px;
         padding: 14px 45px;
         letter-spacing: 0.7px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #b2f1be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            border-radius: 3px;
+        }
     }
 }
 
@@ -156,7 +168,7 @@ h3 {
     }
     &__btn {
         display: block;
-        background-color: $accent-color;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -167,6 +179,18 @@ h3 {
         margin-bottom: 19px;
         padding: 14px 0;
         letter-spacing: 0.7px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #b2f1be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            border-radius: 3px;
+        }
     }
 }
 
@@ -259,27 +283,14 @@ h3 {
         flex-basis:41%;
         &__desc {
             font-family: $font-text;
-<<<<<<< HEAD
             letter-spacing: 0.6px;
-=======
-        letter-spacing: 0.6px;
->>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
         }
     }
-    &-social {
-        display: flex;
-        justify-content: space-around;
-    }
-    
     &-table {
         flex-basis: 49%;
         &__list {
             margin: 25px 0 0 0;
-<<<<<<< HEAD
             padding: 0;
-=======
-            padding:0;
->>>>>>> ad44533115370d16cb3baf67d4f015d113bbaae1
             counter-reset: list;
             column-count: 2;
             &>li {
@@ -332,7 +343,7 @@ h3 {
         }
     }
     &__btn {
-        background-color: $accent-color;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
         border: none;
         color: $light-color;
         text-decoration: none;
@@ -343,9 +354,20 @@ h3 {
         padding: 14px 45px;
         letter-spacing: 0.7px;
         margin-bottom: 19px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #b2f1be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            border-radius: 3px;
+        }
     }
 }
-
 
 .block-product {
     display: flex;
@@ -395,7 +417,7 @@ h3 {
             }
         }
     }
-    & + page_btn {
+    & + page__btn {
         display: block;
         margin: 84px auto 0;
         padding: 13px 0;

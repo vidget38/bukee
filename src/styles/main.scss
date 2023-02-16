@@ -19,6 +19,7 @@ $font-body: 'Roboto Slab', serif;
 $font-text: 'Open Sans', serif;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$gray-color: #9191b5;
 
 body {
     font-family: $font-body;
@@ -71,6 +72,7 @@ h3 {
         border-radius: 3px;
         text-align: center;
         font-size: 18px;
+        letter-spacing: 0.7px;
         margin-top: 28px;
         padding: 11px 45px 15px 45px;
         letter-spacing: 0.7px;
@@ -436,10 +438,101 @@ h3 {
             }
         }
     }
-    & + page__btn {
+    & + .page__btn {
         display: block;
         margin: 84px auto 0;
         padding: 13px 0;
         max-width: 227px;
+    }
+}
+
+.block-blog {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+        font-size: 18px;
+    }
+    &-img {
+        width: 369px;
+        height: 224px;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 369px;
+            height: 224px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+    &-info {
+        font-size: 15px;
+        a {
+            color: $accent-color;
+            text-decoration: none;
+        }
+    }
+    &-desc {
+        font-size: 15px;
+        font-family: $font-text;
+    }
+    & + .page__btn {
+        display: block;
+        margin: 84px auto 0;
+        padding: 13px 0;
+        max-width: 227px;
+    }
+}
+
+.block-letter {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        flex-basis: 49%;
+    }
+    &__title {
+        font-size: 48px;
+        margin-bottom: 23px;
+        margin-top: 8px;
+        letter-spacing: 1.9px;
+    }
+    &__text {
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        font-family: $font-text;
+    }
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $bg-dark-color;
+        border: none;
+        border-radius: 3px;
+        color: $gray-color;
+        padding: 15px 27px;
+        letter-spacing: 0.6px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn {
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+        border: none;
+        color: $light-color;
+        text-decoration: none;
+        max-width: 250px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 21px;
+        letter-spacing: 0.7px;
+        padding: 11px 0 15px 0;
+        box-shadow: 0 -2px #adedbb inset;
+        display: block;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
     }
 }
